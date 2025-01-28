@@ -19,7 +19,11 @@ function adicionarAmigo() {
       alert('Já existe um amigo com esse nome. Por favor, digite o sobrenome.');
     } else {
       amigos.push(nomeDigitado);
+      console.log(amigos)
       // Resto do código para adicionar o nome à lista e limpar o campo
+
+     // Limpa o campo de entrada
+    inputAmigo.value = "";
     }
   }
 
