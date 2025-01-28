@@ -22,8 +22,8 @@ function adicionarAmigo() {
       console.log(amigos)
       // Resto do código para adicionar o nome à lista e limpar o campo
 
-      // Limpa o campo de entrada
-      inputAmigo.value = "";
+     // Limpa o campo de entrada
+    inputAmigo.value = "";
     }
   }
 
