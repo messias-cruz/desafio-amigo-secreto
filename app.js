@@ -4,6 +4,7 @@ let amigos = [];
 
 console.log(amigos);
 
+// Função completa
 function adicionarAmigo() {
   const inputAmigo = document.getElementById("amigo");
   const nomeDigitado = inputAmigo.value;
@@ -40,3 +41,22 @@ function exibirListaAmigos() {
     listaAmigos.appendChild(itemLista); // Adicione o elemento <li> à lista HTML usando appendChild().
   }
 }
+
+// Função completa
+function sortearAmigo() {
+  // Validar que há amigos disponíveis
+  if(amigos.length === 0) {
+    alert("Não há amigos cadastrados para o sorteio.");
+    return;
+  }
+  // Gerar um índice aleatório
+  const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+
+   // Obter o nome sorteado
+   const amigoSorteado = amigos[indiceAleatorio];
+
+    // Mostrar o resultado
+    const resultado = document.getElementById("resultado");
+    resultado.innerHTML = amigoSorteado;
+}
+
